@@ -1,0 +1,48 @@
+---
+id: "A5"
+track: "A"
+order: 5
+title: "Real-time App"
+subtitle: "Live Chat Room"
+tech: "Socket.io, Partykit, or Supabase Realtime"
+xp_reward: 100
+prerequisites: ["A4"]
+concepts:
+  - "WebSockets — persistent two-way connection (vs HTTP request/response)"
+  - "Real-time events and broadcasting"
+  - "Online/offline presence"
+  - "Scaling challenges (what happens with 1000 users?)"
+build_ideas:
+  - "Anonymous confession board — messages appear live for everyone, auto-delete after 24h"
+  - "Collaborative pixel art canvas — each user places one pixel at a time, watch art form in real-time"
+  - "Live quiz game — host asks questions, players buzz in, scores update live"
+  - "Watch party sync — everyone sees a shared video timer, live reactions and chat"
+  - "Collaborative playlist — users add songs in real-time, vote to skip"
+  - "Live auction room — items displayed, bids appear in real-time, countdown timer"
+  - "Study room — users join a room, shared timer (pomodoro), see who's online"
+  - "Live sports scoreboard — update scores in real-time, fans react with emojis"
+  - "Collaborative story writer — each person adds one sentence at a time"
+  - "Customer support live chat — visitor messages, agent responds with typing indicators"
+checklist:
+  - "Set up WebSocket or real-time connection"
+  - "Send messages that appear instantly for all connected users"
+  - "Show who is currently online"
+  - "Messages persist (reload the page and see history)"
+  - "Handle disconnection and reconnection gracefully"
+  - "Deploy with real-time working"
+hints:
+  - "Start with Socket.io — it has the best docs and handles reconnection for you."
+  - "Get a simple ping pong message working before building the full chat."
+  - "Don't forget to save messages to a database too — WebSockets are ephemeral."
+resources:
+  - label: "Socket.io tutorial"
+    url: "https://socket.io/get-started/chat"
+  - label: "Partykit"
+    url: "https://docs.partykit.io/"
+  - label: "Supabase Realtime"
+    url: "https://supabase.com/docs/guides/realtime"
+---
+
+## The Brief
+
+Build an app where things update instantly without refreshing the page. When one user sends a message, everyone else sees it immediately. This is your introduction to WebSockets and real-time communication.

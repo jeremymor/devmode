@@ -1,0 +1,49 @@
+---
+id: "A7"
+track: "A"
+order: 7
+title: "AI-Powered App"
+subtitle: "AI Writing Assistant"
+tech: "Claude API / Anthropic SDK"
+xp_reward: 100
+prerequisites: ["A6"]
+concepts:
+  - "Working with LLM APIs (Claude API, streaming responses)"
+  - "Streaming data to the frontend (Server-Sent Events)"
+  - "Token usage tracking and cost management"
+  - "Prompt engineering on the backend"
+  - "Storing conversation history in a database"
+build_ideas:
+  - "Email draft assistant — paste context, get professional email drafts in different tones"
+  - "Bedtime story generator — enter a child's name and interests, get a personalized story"
+  - "Code explainer — paste code, get a plain-English explanation of what it does"
+  - "Meal planner — describe dietary restrictions, get a week of meal plans with recipes"
+  - "Language learning partner — practice conversations in another language with AI corrections"
+  - "Cover letter writer — paste job description + resume, get a tailored cover letter"
+  - "Debate partner — pick a topic, AI argues the opposite side"
+  - "Meeting notes summarizer — paste raw meeting notes, get action items and summary"
+  - "Character dialogue generator — describe characters, get realistic dialogue"
+  - "Legal document simplifier — paste a terms of service or contract, get plain-English summary"
+checklist:
+  - "Set up the Claude API or another LLM API"
+  - "Send a prompt and get a response"
+  - "Stream the response to the frontend (not wait for full response)"
+  - "Store conversation history in a database"
+  - "Track token usage per request"
+  - "Deploy with AI features working"
+hints:
+  - "Start with a simple request/response before trying streaming."
+  - "Use the Anthropic SDK — it handles auth, retries, and streaming for you."
+  - "Streaming uses Server-Sent Events (SSE). The Vercel AI SDK makes this easier."
+resources:
+  - label: "Anthropic API docs"
+    url: "https://docs.anthropic.com/"
+  - label: "Vercel AI SDK"
+    url: "https://sdk.vercel.ai/docs"
+  - label: "Prompt engineering guide"
+    url: "https://docs.anthropic.com/claude/docs/prompt-engineering"
+---
+
+## The Brief
+
+Build an app powered by AI. Users type something in, and an AI responds — with the response streaming in word by word. You'll learn to work with LLM APIs, stream responses to the frontend, and manage conversation history. This is the technology behind every AI product being built today.

@@ -1,0 +1,49 @@
+---
+id: "A3"
+track: "A"
+order: 3
+title: "Auth App"
+subtitle: "Private Notes with Login"
+tech: "NextAuth, Lucia, or Clerk"
+xp_reward: 100
+prerequisites: ["A2"]
+concepts:
+  - "Authentication (who are you?) vs Authorization (what can you access?)"
+  - "Sessions, cookies, or JWT tokens"
+  - "Password hashing (bcrypt)"
+  - "Protected routes / middleware"
+  - "Database relationships (users have many notes)"
+build_ideas:
+  - "Personal journal — private diary entries only the author can read, with mood tags"
+  - "Flashcard study app — each user creates their own decks and cards"
+  - "Recipe box — users save their own recipes, categorize, and search"
+  - "Bookmarks manager — save links with tags, folders visible only to you"
+  - "Expense tracker — log personal expenses, categories, monthly summaries"
+  - "Dream journal — log dreams with dates, tags, search your own dreams"
+  - "Password-protected family photo album — upload photos visible only to family members"
+  - "Personal CRM — track your contacts, meeting notes, follow-up reminders"
+  - "Meditation log — track sessions, duration, notes, view your own history"
+  - "Code snippet library — save reusable code snippets with language tags, searchable"
+checklist:
+  - "Add authentication to your app (signup + login)"
+  - "Hash passwords before storing them"
+  - "Create protected routes that require login"
+  - "Each user can only see their own data"
+  - "Add a logout button that clears the session"
+  - "Deploy with auth working end-to-end"
+hints:
+  - "Use an auth library (NextAuth, Clerk, Lucia) instead of rolling your own. You'll learn the concepts either way."
+  - "Start with email/password auth. Add social login (GitHub, Google) later as a stretch goal."
+  - "The key insight: every database query should filter by the logged-in user's ID."
+resources:
+  - label: "NextAuth.js docs"
+    url: "https://next-auth.js.org/getting-started/introduction"
+  - label: "Clerk quickstart"
+    url: "https://clerk.com/docs/quickstarts/nextjs"
+  - label: "Auth concepts explained"
+    url: "https://roadmap.sh/guides/session-based-authentication"
+---
+
+## The Brief
+
+Build an app where users log in and only see their own data. This is one of the most important concepts in web development — almost every real app needs authentication. You'll learn the difference between authentication (proving who you are) and authorization (controlling what you can access), and implement both.

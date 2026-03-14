@@ -1,0 +1,49 @@
+---
+id: "A6"
+track: "A"
+order: 6
+title: "API + Third-Party Integrations"
+subtitle: "Personal Dashboard"
+tech: "Redis + node-cron or Trigger.dev"
+xp_reward: 100
+prerequisites: ["A5"]
+concepts:
+  - "Consuming external APIs (REST, OAuth)"
+  - "API keys vs OAuth tokens"
+  - "Rate limiting and caching (don't hit APIs every second)"
+  - "Background jobs / cron tasks (refresh data every hour)"
+  - "Error handling when external services fail"
+build_ideas:
+  - "Developer morning dashboard — GitHub notifications, CI status, Hacker News, weather"
+  - "Social media aggregator — pull posts from Twitter/X, Reddit, YouTube into one feed"
+  - "Crypto portfolio tracker — pull live prices from CoinGecko, show gains/losses"
+  - "Fitness dashboard — pull data from Strava, Apple Health into one view"
+  - "Freelancer business dashboard — Stripe revenue, Google Analytics traffic, tasks"
+  - "Smart home dashboard — weather API, air quality API, energy usage, calendar"
+  - "Job search aggregator — pull listings from multiple job APIs, track applications"
+  - "News briefing generator — pull headlines from multiple sources, summarize by category"
+  - "Travel planning dashboard — flight prices, weather at destination, currency rates"
+  - "Student dashboard — class schedule, assignment deadlines, library hours, campus news"
+checklist:
+  - "Integrate at least 2 external APIs"
+  - "Handle API keys securely with environment variables"
+  - "Cache API responses to avoid rate limits"
+  - "Set up a background job to refresh data periodically"
+  - "Handle errors gracefully when an API is down"
+  - "Deploy with all integrations working"
+hints:
+  - "Start with free, no-auth APIs (weather, Hacker News) before tackling OAuth ones."
+  - "Use Redis or even just an in-memory cache to avoid hitting APIs on every page load."
+  - "Wrap each API call in a try/catch — external services WILL fail sometimes."
+resources:
+  - label: "Public APIs list"
+    url: "https://github.com/public-apis/public-apis"
+  - label: "Redis quickstart"
+    url: "https://redis.io/docs/getting-started/"
+  - label: "Trigger.dev (background jobs)"
+    url: "https://trigger.dev/docs"
+---
+
+## The Brief
+
+Build an app that pulls data from multiple external services and displays it in one place. This is how real applications work — they don't exist in isolation. You'll learn to consume APIs, handle authentication, cache responses, and deal with the reality that external services sometimes fail.
