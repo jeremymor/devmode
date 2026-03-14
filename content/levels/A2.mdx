@@ -1,0 +1,49 @@
+---
+id: "A2"
+track: "A"
+order: 2
+title: "CRUD App"
+subtitle: "Data That Persists"
+tech: "Express or Next.js + Postgres"
+xp_reward: 100
+prerequisites: ["A1"]
+concepts:
+  - "What a database is and why you need one"
+  - "CRUD operations (Create, Read, Update, Delete)"
+  - "SQL basics or an ORM like Prisma"
+  - "REST API design (GET /items, POST /items, DELETE /items/:id)"
+  - "How frontend talks to backend (fetch/axios)"
+build_ideas:
+  - "Reading list tracker — add books, mark as reading/finished, rate them"
+  - "Grocery list app — add items, check off, organize by store aisle"
+  - "Workout log — log exercises, sets, reps, track progress over time"
+  - "Movie watchlist — add films, mark watched, write mini reviews"
+  - "Plant care tracker — add plants, set watering schedules, log care events"
+  - "Vocabulary builder — add words + definitions, mark as learned/reviewing"
+  - "Gift idea organizer — save gift ideas per person, mark purchased"
+  - "Bug tracker — log bugs with severity, status (open/in-progress/closed), descriptions"
+  - "Daily habit tracker — add habits, check off daily, view streaks"
+  - "Apartment hunting tracker — save listings, notes, pros/cons, application status"
+checklist:
+  - "Set up a database (Postgres via Supabase or local)"
+  - "Create a table for your data"
+  - "Build a REST API with GET, POST, PUT, DELETE endpoints"
+  - "Connect your frontend to the API"
+  - "Data persists across page refreshes"
+  - "Deploy it live"
+hints:
+  - "Start with just one table. Don't over-design the schema."
+  - "Use Prisma or Drizzle as your ORM — raw SQL is fine too but an ORM is faster to build with."
+  - "Test your API with curl or Postman before building the frontend."
+resources:
+  - label: "Supabase quickstart"
+    url: "https://supabase.com/docs/guides/getting-started"
+  - label: "Prisma getting started"
+    url: "https://www.prisma.io/docs/getting-started"
+  - label: "REST API design guide"
+    url: "https://restfulapi.net/"
+---
+
+## The Brief
+
+Build an app where data doesn't disappear when you refresh the page. This is your first encounter with databases — the backbone of almost every application. You'll learn to create, read, update, and delete data through a REST API, and connect a frontend that lets users interact with it naturally.

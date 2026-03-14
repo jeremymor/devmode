@@ -1,0 +1,49 @@
+---
+id: "A4"
+track: "A"
+order: 4
+title: "File Uploads"
+subtitle: "Image Gallery"
+tech: "S3-compatible storage"
+xp_reward: 100
+prerequisites: ["A3"]
+concepts:
+  - "File uploads and multipart form data"
+  - "Cloud storage (S3, Cloudflare R2, or Supabase Storage)"
+  - "Image processing/resizing"
+  - "Serving static assets vs dynamic content"
+  - "Pagination (loading 20 images at a time)"
+build_ideas:
+  - "Pet photo sharing wall — upload pet pics, add captions, browse by animal type"
+  - "Meme generator — upload image, add top/bottom text, save to public gallery"
+  - "Art portfolio platform — artists upload work, organize into collections"
+  - "Before/after photo tool — upload two images, display side-by-side with slider"
+  - "Event photo drop — wedding/party guests upload photos to a shared album"
+  - "Product photo manager — upload product images, auto-generate thumbnails"
+  - "Comic strip creator — upload panels, arrange in sequence, publish strips"
+  - "Wallpaper gallery — upload high-res images, auto-resize for phone/desktop/tablet"
+  - "Screenshot organizer — upload screenshots, auto-tag by app/date, search"
+  - "Virtual yard sale — upload item photos with prices, mark as sold"
+checklist:
+  - "Set up cloud storage (S3, R2, or Supabase Storage)"
+  - "Build a file upload form"
+  - "Upload files to cloud storage from your server"
+  - "Display uploaded images in a gallery"
+  - "Add pagination (load more / infinite scroll)"
+  - "Deploy with uploads working end-to-end"
+hints:
+  - "Use Supabase Storage or Cloudflare R2 — they're free for small projects."
+  - "Don't store files in your database — store the URL/path to the file."
+  - "Start with just upload + display. Add pagination and image processing later."
+resources:
+  - label: "Supabase Storage"
+    url: "https://supabase.com/docs/guides/storage"
+  - label: "Cloudflare R2"
+    url: "https://developers.cloudflare.com/r2/"
+  - label: "Sharp (image processing)"
+    url: "https://sharp.pixelplumbing.com/"
+---
+
+## The Brief
+
+Build an app where users upload files — images, documents, or media — and browse them in a gallery. This is your introduction to cloud storage, one of the building blocks of modern apps.

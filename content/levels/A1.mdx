@@ -1,0 +1,50 @@
+---
+id: "A1"
+track: "A"
+order: 1
+title: "Static Site + Form Handler"
+subtitle: "Personal Portfolio with Contact Form"
+tech: "Next.js or Express.js"
+xp_reward: 100
+prerequisites: ["A0"]
+concepts:
+  - "What a server actually does (receives requests, sends responses)"
+  - "HTTP methods (GET vs POST)"
+  - "Environment variables (storing secrets safely)"
+  - "Deploying something live (Vercel, Railway, or Render)"
+build_ideas:
+  - "Freelance photographer portfolio — gallery grid + book a session contact form"
+  - "Local bakery website — menu, hours, location map + order inquiry form"
+  - "Wedding invitation site — event details, RSVP form that emails the couple"
+  - "Pet adoption profile page — animal bios, photos + interested in adopting form"
+  - "Music teacher landing page — lesson types, pricing, testimonials + booking request form"
+  - "Neighborhood watch site — safety tips, meeting schedule + incident report form"
+  - "Indie game studio page — game trailers, press kit + beta signup form"
+  - "Personal trainer site — services, transformation photos + free consultation request form"
+  - "Local event promoter page — upcoming events, venue info + vendor application form"
+  - "Student tutor matching page — subjects offered, rates + contact form that routes to the right tutor"
+checklist:
+  - "Create a Next.js or Express project"
+  - "Build at least 2 pages with navigation"
+  - "Add a contact form with input fields"
+  - "Handle form submission on the server (POST endpoint)"
+  - "Use environment variables for any secrets"
+  - "Deploy it live and share the URL"
+hints:
+  - "Start with just static HTML/CSS in Next.js. Don't worry about the form yet."
+  - "For the form, create an API route that handles POST requests. console.log the data first before trying to send emails."
+  - "Use Resend or Formspree for the email — don't try to set up your own email server."
+resources:
+  - label: "Next.js getting started"
+    url: "https://nextjs.org/docs/getting-started"
+  - label: "Resend (send emails)"
+    url: "https://resend.com/docs"
+  - label: "Vercel deployment"
+    url: "https://vercel.com/docs"
+---
+
+## The Brief
+
+Build your first website and deploy it to the internet. This is the moment your code goes from "running on my laptop" to "anyone in the world can see it."
+
+You'll create a multi-page site with a working contact form. When someone fills out the form, it should actually do something — send you an email, save to a database, or post to a Slack channel. You'll learn what a server actually does and how to deploy your work live.
